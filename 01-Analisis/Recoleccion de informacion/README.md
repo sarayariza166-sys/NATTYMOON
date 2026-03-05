@@ -1,4 +1,4 @@
-INFORMACIÓN 
+## INFORMACIÓN 
 # Propietario 
  ## Preguntas generales
 
