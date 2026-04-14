@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Productos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>💙 Productos</h1>
+
+      <div class="form">
+        <input id="id_producto" placeholder="ID producto" />
+
+        <select id="id_categoria"></select>
+
+        <input id="nombre" placeholder="Nombre" />
+        <input id="descripcion" placeholder="Descripción" />
+
+        <input id="precio" placeholder="Precio" />
+
+        <input id="talla" placeholder="Talla" />
+        <input id="stock" placeholder="Stock" />
+
+        <button onclick="guardar()">CREAR / EDITAR</button>
+      </div>
+
+      <hr />
+
+      <div id="lista"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
