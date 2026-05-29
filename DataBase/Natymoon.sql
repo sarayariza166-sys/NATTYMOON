@@ -107,3 +107,4 @@ create table detalle_orden (
     constraint fk_detalle_id_orden foreign key (id_orden_compra) references orden_compra (id),
     constraint fk_detalle_orden_id_producto foreign key (id_producto) references producto (id)
 );
+
