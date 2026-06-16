@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #f9b7d3,
+    #d7c1ff,
+    #f7c2d8
+  );
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 90px;
+  background: #ffe5ef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.menu-icon {
+  font-size: 35px;
+  color: #5b2f74;
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 48px;
+  color: #5b2f74;
+  font-weight: bold;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 25px;
+  color: #5b2f74;
+  font-size: 28px;
+}
+
+.nav-icons span {
+  cursor: pointer;
+}
+
+/* CONTENEDOR */
+
+.register-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.register-card {
+  width: 95%;
+  max-width: 1500px;
+  min-height: 750px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+
+  border-radius: 35px;
+  padding: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FORMULARIO */
+
+.form-section {
+  width: 55%;
+}
+
+.form-section h2 {
+  font-size: 75px;
+  color: #5b2f74;
+  margin-bottom: 30px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.password-container input {
+  width: 100%;
+  height: 70px;
+  border: 3px solid #b9a9b9;
+  border-radius: 40px;
+  padding: 0 25px;
+  font-size: 24px;
+  outline: none;
+  background: #fff;
+  color: #333;
+}
+
+/* PASSWORD */
+
+.password-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.show-password-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: transparent;
+  border: none;
+
+  color: #653183;
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.show-password-btn:hover {
+  color: #4b2460;
+}
+
+/* CHECKBOX */
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.checkbox-container input {
+  width: 22px;
+  height: 22px;
+}
+
+/* BOTON */
+
+.form-section button[type="submit"] {
+  width: 100%;
+  height: 75px;
+  border: none;
+  border-radius: 40px;
+  background: #653183;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.form-section button[type="submit"]:hover {
+  background: #54286d;
+}
+
+/* LOGIN LINK */
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+}
+
+.login-link a {
+  color: #5b2f74;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* IMAGEN */
+
+.image-section {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 450px;
+  max-width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .register-card {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+
+  .image-section {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .image-section img {
+    width: 250px;
+  }
+
+  .form-section h2 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .logo-text {
+    font-size: 32px;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+}
+.logo-navbar,
+.logo-container {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo-navbar:hover,
+.logo-container:hover {
+  transform: scale(1.03);
+}
