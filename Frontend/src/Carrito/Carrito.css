@@ -1,0 +1,144 @@
+﻿.carrito-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd9eb, #f0e6ff, #dff3ff);
+}
+
+.titulo-carrito {
+  text-align: center;
+  color: #5f3a85;
+  margin: 25px 0;
+}
+
+.contenido-carrito {
+  display: flex;
+  gap: 30px;
+  padding: 0 30px 30px;
+}
+
+.productos-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.producto-card,
+.carrito-vacio,
+.resumen {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.producto-card img,
+.imagen-producto {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #eee;
+}
+
+.imagen-producto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.producto-card h4 {
+  color: #4b2b7a;
+  margin-top: 10px;
+}
+
+.cantidad {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.cantidad button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #e8d8ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-eliminar {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #dc3545;
+  color: white;
+  padding: 9px;
+  cursor: pointer;
+}
+
+.resumen {
+  width: 320px;
+  height: fit-content;
+}
+
+.resumen h2 {
+  color: #4b2b7a;
+  margin-bottom: 12px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.resumen input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0 8px;
+  border: 1px solid #d7c1ff;
+  border-radius: 8px;
+}
+
+.btn-cupon,
+.btn-pago {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cupon {
+  background: #d95ce3;
+  margin-bottom: 10px;
+}
+
+.btn-pago {
+  background: #6b4fa0;
+}
+
+.carrito-vacio {
+  grid-column: 1 / -1;
+  color: #4b2b7a;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .contenido-carrito {
+    flex-direction: column;
+  }
+
+  .resumen {
+    width: 100%;
+  }
+}

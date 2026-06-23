@@ -1,0 +1,44 @@
+﻿.vista-admin {
+  padding: 20px;
+}
+
+.vista-admin h1 {
+  background: linear-gradient(to right, #f5c6e7, #cfd3ff);
+  border-radius: 10px;
+  color: #4f2a6b;
+  margin: 0 0 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.dashboard-card,
+.panel-admin {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(79, 42, 107, 0.1);
+  padding: 20px;
+}
+
+.dashboard-card span {
+  color: #6a5874;
+  font-weight: 700;
+}
+
+.dashboard-card strong {
+  color: #5e2d91;
+  display: block;
+  font-size: 38px;
+  margin-top: 8px;
+}
+
+.panel-admin h2 {
+  color: #4f2a6b;
+  margin-top: 0;
+}

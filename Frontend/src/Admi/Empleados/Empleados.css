@@ -1,0 +1,73 @@
+﻿.empleados-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.empleado-card,
+.empleados-vacio {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.empleado-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #5e2d91;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 auto 12px;
+}
+
+.empleado-card h3 {
+  color: #4f2a6b;
+  margin-bottom: 6px;
+}
+
+.empleado-card p {
+  color: #6a5874;
+  margin-bottom: 10px;
+}
+
+.empleado-cargo {
+  background: #f3eefb;
+  border-radius: 999px;
+  color: #5e2d91;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 7px 12px;
+}
+
+.empleado-card strong {
+  color: #198754;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.btn-eliminar-cuenta {
+  background: #dc3545;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 10px 14px;
+  width: 100%;
+}
+
+.btn-eliminar-cuenta:hover {
+  background: #bb2d3b;
+}
+
+.empleados-vacio {
+  grid-column: 1 / -1;
+  color: #4f2a6b;
+  font-weight: 800;
+}

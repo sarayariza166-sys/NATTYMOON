@@ -1,0 +1,188 @@
+body {
+  background: linear-gradient(
+    to right,
+    #ffd7eb,
+    #e6dcff
+  );
+}
+
+.admin-container {
+  padding: 20px;
+}
+
+.titulo-admin {
+  background: linear-gradient(
+    to right,
+    #f5c6e7,
+    #cfd3ff
+  );
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.titulo-admin h1 {
+  text-align: center;
+  color: #4f2a6b;
+}
+
+.barra-superior {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.barra-superior select,
+.barra-superior input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.barra-superior input {
+  flex: 1;
+}
+
+.btn-nuevo {
+  background: #5e2d91;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tabla-contenedor {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f3eefb;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.img-producto {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.editar {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.eliminar {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.preview {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.botones-modal {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.guardar {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+.cancelar {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+.btn-catalogo {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.menu-catalogos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-catalogos button {
+  background: white;
+  border: 1px solid #d8b8ec;
+  border-radius: 8px;
+  color: #4f2a6b;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 16px;
+}
+
+.menu-catalogos button.activo {
+  background: #5e2d91;
+  color: white;
+}
+
+.modal-categoria {
+  color: #5e2d91;
+  font-weight: bold;
+  margin: 0;
+}

@@ -1,32 +1,41 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+﻿import { Routes, Route } from "react-router-dom";
+import AdminLayout from "./AdminLayout/AdminLayout";
+import Productos from "./Admi/Productos";
+import CatalogoBase from "./catalogos/CatalogoBase";
+import Carrito from "./Carrito/Carrito";
+import Clientes from "./Admi/Clientes/Clientes";
+import Cupones from "./Cupones/cupones";
+import Empleados from "./Admi/Empleados/Empleados";
+import Configuracion from "./Configuracion/Configuracion";
+import Dashboard from "./Dashboard/Dashboard";
 import Home from "./Home/home";
 import Login from "./login/login";
+import Pedidos from "./Pedidos/Pedidos";
 import Register from "./register/register";
-
-import CatalogoMujer from "./catalogos/CatalogoMujer";
-import CatalogoHombre from "./catalogos/CatalogoHombre";
-import CatalogoNina from "./catalogos/CatalogoNina";
-import CatalogoNino from "./catalogos/CatalogoNino";
-import CatalogoPantuflas from "./catalogos/CatalogoPantuflas";
-import CatalogoLevantadoras from "./catalogos/CatalogoLevantadoras";
+import { CATALOGOS } from "./data/catalogos";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+    <Routes>
+      <Route element={<AdminLayout />}>
+        <Route path="/" element={<Productos />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/pedidos" element={<Pedidos />} />
+        <Route path="/clientes" element={<Clientes />} />
+        <Route path="/empleados" element={<Empleados />} />
+        <Route path="/configuracion" element={<Configuracion />} />
+      </Route>
 
-        <Route path="/mujer" element={<CatalogoMujer />} />
-        <Route path="/hombre" element={<CatalogoHombre />} />
-        <Route path="/nina" element={<CatalogoNina />} />
-        <Route path="/nino" element={<CatalogoNino />} />
-        <Route path="/pantuflas" element={<CatalogoPantuflas />} />
-        <Route path="/levantadoras" element={<CatalogoLevantadoras />} />
-      </Routes>
-    </BrowserRouter>
+      <Route path="/home" element={<Home />} />
+      <Route path="/carrito" element={<Carrito />} />
+      <Route path="/cupones" element={<Cupones />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+
+      {CATALOGOS.map(({ value, ruta, titulo }) => (
+        <Route key={value} path={ruta} element={<CatalogoBase categoria={value} titulo={titulo} />} />
+      ))}
+    </Routes>
   );
 }
 
