@@ -1,0 +1,58 @@
+.direccion-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #ffd6e7,
+    #e7d8ff
+  );
+  padding: 20px;
+}
+
+.direccion-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.direccion-card h1 {
+  color: #5a3e99;
+  margin-bottom: 10px;
+}
+
+.direccion-card p {
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: #5a3e99;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

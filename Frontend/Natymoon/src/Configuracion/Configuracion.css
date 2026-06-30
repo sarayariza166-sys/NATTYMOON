@@ -1,0 +1,33 @@
+﻿.config-form {
+  background: white;
+  border-radius: 14px;
+  display: grid;
+  gap: 16px;
+  max-width: 620px;
+  padding: 22px;
+}
+
+.config-form label {
+  color: #4f2a6b;
+  display: grid;
+  font-weight: 700;
+  gap: 8px;
+}
+
+.config-form input,
+.config-form select {
+  border: 1px solid #d8b8ec;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.config-form button {
+  background: #5e2d91;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 12px 18px;
+  width: fit-content;
+}

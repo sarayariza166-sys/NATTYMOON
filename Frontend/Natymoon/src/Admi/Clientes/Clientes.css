@@ -1,0 +1,38 @@
+﻿.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.cliente-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cliente-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #5e2d91;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 auto 12px;
+}
+
+.cliente-card h3 {
+  color: #4f2a6b;
+  margin-bottom: 6px;
+}
+
+.cliente-card p {
+  color: #6a5874;
+}
+
+.cliente-card strong {
+  color: #5e2d91;
+}
